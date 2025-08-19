@@ -26,7 +26,7 @@ import team1 from "../assets/team1.png";
 import team2 from "../assets/team2.png";
 import team3 from "../assets/team3.png";
 import team4 from "../assets/team4.png";
-import material from "../assets/material.png";
+
 import iconoir_facebook from "../assets/iconoir_facebook.svg";
 import iconoir_instagram from "../assets/iconoir_instagram.svg";
 import iconoir_twitter from "../assets/iconoir_twitter.svg";
