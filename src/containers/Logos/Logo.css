@@ -1,0 +1,61 @@
+.logos {
+  width: 100%;
+  margin-top: 60px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  box-sizing: border-box;
+  padding: var(--section-padding, 60px);
+
+
+  --speed: 15s;
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+  pointer-events: none;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+}
+
+
+.logos:hover {
+  --speed: 40s;
+}
+
+.logos-slide {
+  display: flex;
+  flex-shrink: 0;
+  animation: slide var(--speed) linear infinite;
+  animation-play-state: running;
+  will-change: transform;
+  transition: animation-duration 0.3s linear; 
+}
+
+.logos-slide img {
+  flex-shrink: 0;
+  margin: 0 20px;
+  object-fit: contain;
+}

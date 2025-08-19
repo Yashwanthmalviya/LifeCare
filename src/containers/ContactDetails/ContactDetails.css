@@ -1,0 +1,94 @@
+.details-main {
+    padding: 100px 0; 
+    font-family: var(--font-primary);
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+}
+
+.details-left {
+    display: flex;
+    flex-direction: column;    
+    flex: 1;
+    gap: 15px;
+}
+
+input, textarea {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none; 
+    resize: none;  
+}
+
+.details-message {
+    height: 250px;
+}
+
+.details-left button {
+    padding: 15px;
+    border: none;
+    background: var(--color-blue);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.details-left button:hover {
+    background: #0056b3;
+}
+
+.details-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 45px;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.right-content p {
+    font-size: 16px;
+    color: var(--color-grey);
+}
+
+.right-content h1 {
+    font-size: 18px;
+    color: var(--color-black);
+}
+
+.right-content1 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.right-icon img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1139px) {
+    .details-main {
+        flex-direction: column;
+    }
+}

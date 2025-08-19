@@ -1,0 +1,39 @@
+.core__main{
+    padding:50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.core-text h2{
+    font-family: var(--font-primary);
+    font-size: 45px;
+    
+
+}
+.core_-container{
+    margin-top: 60px;
+}
+
+.core-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+
+
+@media screen and (max-width: 1439px) {
+   .core-cards{
+    flex-direction: column;
+    width: 100%;
+   }
+}
+
+

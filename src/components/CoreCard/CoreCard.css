@@ -1,0 +1,75 @@
+.coreCard__container {
+    width: inherit;
+    height: 236px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(33, 33, 33, 0.1) 0px 0px 12px 0px;
+}
+
+.coreCard__container:hover{
+    background-color: var(--color-blue);
+    transition:1s ease;
+     color: white;
+}
+
+.coreCard__top{
+    display: flex;
+    align-items: end;
+    justify-content: flex-end
+}
+
+.coreCard__icon {
+    display: flex;
+    justify-content: flex-end; 
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1373eb1a;
+    justify-content: center;
+    align-items: center;
+}
+
+.coreCard__container:hover .coreCard__icon {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.coreCard__container:hover .coreCard__icon img {
+    filter: brightness(0) invert(1);
+}
+
+.coreCard__icon img{
+      width: 60%;
+    height: 60%;
+    object-fit: contain;
+    transition: filter 0.5s ease;
+}
+
+.coreCard__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    font-family: var(--font-primary);
+}
+
+
+
+.coreCard__text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    /* Force break after first word */
+    white-space: pre-line; /* allows \n in JSX */
+}
+.coreCard__text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.7;
+}
+
+

@@ -1,0 +1,47 @@
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__padding {
+  padding: 2rem 8rem;
+}
+
+
+
+
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+ 
+}
+
+@media screen and (min-width: 810px) and (max-width: 1439px) {
+  .section__padding {
+  padding: 0 30px;
+}
+}
+
+
+@media screen and (max-width: 809px) {
+ .section__padding {
+  padding: 0 20px;
+}
+}
