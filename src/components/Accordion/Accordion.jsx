@@ -13,7 +13,7 @@ const Accordion = ({ title, content }) => {
             >
                 <h3>{title}</h3>
                 <img
-                    src={isOpen ? images.button2 : images.button}
+                    src={isOpen ? images.Button2 : images.Button}
                     alt="toggle"
                     className={`accordion_icon ${isOpen ? 'rotate' : ''}`}
                 />

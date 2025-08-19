@@ -5,10 +5,10 @@ import Logo_2 from "../assets/Logo_2.svg";
 import Logo_3 from "../assets/Logo_3.svg";
 import Logo_4 from "../assets/Logo_4.svg";
 import Logo_5 from "../assets/Logo_5.svg";
-
+import Button from "../assets/Button.png";
+import Button2 from "../assets/Button2.png";
 import accord_img from "../assets/accord_img.png";
-import button from "../assets/button.png";
-import button2 from "../assets/button2.png";
+
 import photo1 from "../assets/photo1.png";
 import photo2 from "../assets/photo2.png";
 import photo3 from "../assets/photo3.png";
@@ -42,6 +42,7 @@ import services5 from "../assets/services5.jpg";
 import services6 from "../assets/services6.jpg";
 import valueicon1 from "../assets/valueicon1.svg";
 import valueicon2 from "../assets/valueicon2.svg";
+
 import valueicon3 from "../assets/valueicon3.svg";
 import valueicon4 from "../assets/valueicon4.svg";
 import valueicon1h from "../assets/valueicon1h.svg";
@@ -59,8 +60,8 @@ export default {
   Logo_5,
 
   accord_img,
-  button,
-  button2,
+  Button,
+  Button2,
   photo1,
   photo2,
   photo3,
