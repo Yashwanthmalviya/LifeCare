@@ -79,7 +79,7 @@ export default {
   team2,
   team3,
   team4,
-  material,
+
   iconoir_facebook,
   iconoir_instagram,
   iconoir_twitter,
