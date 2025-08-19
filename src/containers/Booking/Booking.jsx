@@ -23,11 +23,11 @@ const Booking = () => {
 
                     <div className="booking__content">
                         <div>
-                            <BookingText icon={images.BookingIcon1} title="1. Register Online" content="Sign up with basic details." />
-                            <BookingText icon={images.BookingIcon2} title="2. Explore Services" content="Find the right healthcare service." />
-                            <BookingText icon={images.BookingIcon3} title="3. Choose a Provider" content="Select your preferred healthcare professional." />
-                            <BookingText icon={images.BookingIcon4} title="4. Pick a Time" content="Choose a convenient appointment slot." />
-                            <BookingText icon={images.BookingIcon5} title="5. Confirm Booking" content="Review and confirm your appointment." />
+                            <BookingText icon={images.bookingIcon1} title="1. Register Online" content="Sign up with basic details." />
+                            <BookingText icon={images.bookingIcon2} title="2. Explore Services" content="Find the right healthcare service." />
+                            <BookingText icon={images.bookingIcon3} title="3. Choose a Provider" content="Select your preferred healthcare professional." />
+                            <BookingText icon={images.bookingIcon4} title="4. Pick a Time" content="Choose a convenient appointment slot." />
+                            <BookingText icon={images.bookingIcon5} title="5. Confirm Booking" content="Review and confirm your appointment." />
 
                         </div>
                         <div style={{ width: '100%' }}>

@@ -16,11 +16,11 @@ import photo4 from "../assets/photo4.png";
 import photo5 from "../assets/photo5.png";
 import photo6 from "../assets/photo6.png";
 import BookingImg from "../assets/BookingImg.png";
-import BookingIcon1 from "../assets/BookingIcon1.svg";
-import BookingIcon2 from "../assets/BookingIcon2.svg";
-import BookingIcon3 from "../assets/BookingIcon3.svg";
-import BookingIcon4 from "../assets/BookingIcon4.svg";
-import BookingIcon5 from "../assets/BookingIcon5.svg";
+import bookingIcon1 from "../assets/bookingIcon1.svg";
+import bookingIcon2 from "../assets/bookingIcon2.svg";
+import bookingIcon3 from "../assets/bookingIcon3.svg";
+import bookingIcon4 from "../assets/bookingIcon4.svg";
+import bookingIcon5 from "../assets/bookingIcon5.svg";
 import AboutUsHeroImage from "../assets/AboutUsHeroImage.png";
 import team1 from "../assets/team1.png";
 import team2 from "../assets/team2.png";
@@ -69,11 +69,11 @@ export default {
   photo5,
   photo6,
   BookingImg,
-  BookingIcon1,
-  BookingIcon2,
-  BookingIcon3,
-  BookingIcon4,
-  BookingIcon5,
+  bookingIcon1,
+  bookingIcon2,
+  bookingIcon3,
+  bookingIcon4,
+  bookingIcon5,
   AboutUsHeroImage,
   team1,
   team2,
