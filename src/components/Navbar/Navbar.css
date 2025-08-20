@@ -71,9 +71,9 @@
   display: none;
 }
 
-/* ================= Small Screens ================= */
 
-/* Tablet (810px - 1439px) */
+
+
 @media screen and (min-width: 810px) and (max-width: 1439px) {
   .navbar__links {
     display: none;
@@ -109,7 +109,6 @@
   }
 }
 
-/* Phone (809px and below) */
 @media screen and (max-width: 809px) {
   .navbar__links {
     display: none;
@@ -146,7 +145,6 @@
   }
 }
 
-/* Animation for dropdown */
 @keyframes slideDown {
   from {
     opacity: 0;
