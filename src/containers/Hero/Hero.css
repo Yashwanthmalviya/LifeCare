@@ -59,6 +59,8 @@
     .hero__image {
         height: 650px;
     }
+
+    
 }
 
 
@@ -102,5 +104,8 @@
         bottom: 15px;
         gap: 10px;
         padding: 8px 12px;
+    }
+    .hero__image{
+        background: none;
     }
 }
