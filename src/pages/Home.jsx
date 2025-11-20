@@ -6,6 +6,7 @@ import Services from "../containers/Services/Services";
 import Testimonials from "../containers/Testimonials/Testimonials";
 import Booking from "../containers/Booking/Booking";
 import Cta from "../components/Cta/Cta";
+import GridDemo from "../containers/GridDemo/GridDemo";
 
 const Home = () => {
 
@@ -34,6 +35,7 @@ const Home = () => {
             <section className="fade-in"><Testimonials /></section>
             <section className="fade-in"><Booking /></section>
             <section className="fade-in"><Cta /></section>
+            <section><GridDemo /></section>
         </>
     );
 };
