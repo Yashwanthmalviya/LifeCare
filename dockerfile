@@ -1,26 +1,31 @@
-# Use Node for build and serve
-FROM node:18-alpine
+# ------------ 1. Build Stage ------------
+FROM node:18 AS build
 
 # Set working directory
 WORKDIR /app
 
-# Copy dependency files
+# Copy only package files first (better caching)
 COPY package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy all source code
+# Copy source code
 COPY . .
 
-# Build the Vite React app (creates dist/)
+# Build the project (for React, Vite, Vue, Angular…)
 RUN npm run build
 
-# Install serve to host static files
-RUN npm install -g serve
 
-# Expose port Render will use
-EXPOSE 3000
 
-# Serve the built app
-CMD ["serve", "-s", "dist", "-l", "3000"]
+# ------------ 2. Nginx Serve Stage ------------
+FROM nginx:stable-alpine
+
+# Copy built files from previous stage to Nginx HTML folder
+COPY --from=build /app/dist /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]
