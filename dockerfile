@@ -1,27 +1,30 @@
-# ------------ 1. Build Stage ------------
-FROM node:18 AS build
+# -----------------------------
+# 🔹 1. Build Stage (Node)
+# -----------------------------
+FROM node:18-alpine AS build
 
 # Set working directory
 WORKDIR /app
 
-# Copy only package files first (better caching)
-COPY package*.json ./
+# Copy only package files first to improve caching
+COPY package.json package-lock.json ./
 
-# Install dependencies
-RUN npm install
+# Install dependencies (faster & deterministic)
+RUN npm ci
 
-# Copy source code
+# Copy the remaining project files
 COPY . .
 
-# Build the project (for React, Vite, Vue, Angular…)
+# Build the production-ready app
 RUN npm run build
 
 
+# -----------------------------
+# 🔹 2. Serve Stage (Nginx)
+# -----------------------------
+FROM nginx:alpine
 
-# ------------ 2. Nginx Serve Stage ------------
-FROM nginx:stable-alpine
-
-# Copy built files from previous stage to Nginx HTML folder
+# Copy built files from build stage
 COPY --from=build /app/dist /usr/share/nginx/html
 
 # Expose port 80
